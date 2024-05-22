@@ -83,7 +83,7 @@ const SpinningWheel: React.FC<SpinningWheelProps> = ({ teilnehmer }) => {
   return (
     <div className="wheel-container">
       <div id="einsatz" className="center-label">
-        <div className="label">Im Jackpot vorhanden</div>
+        <div className="label">Present in the jackpot</div>
         <div>{jackpot.toFixed(2)}</div>
       </div>
       <div className={`wheel ${isSpinning ? "spinning" : ""}`}>
@@ -109,10 +109,8 @@ const SpinningWheel: React.FC<SpinningWheelProps> = ({ teilnehmer }) => {
           );
         })}
       </div>
-      <div className="countdown-timer">
-        Nächster Spin in: {timeLeft} Sekunden
-      </div>
-      {winner && <div className="winner">Gewinner: {winner}</div>}
+      <div className="countdown-timer">Next spin in: {timeLeft} Sekunden</div>
+      {winner && <div className="winner">Winner: {winner}</div>}
     </div>
   );
 };
