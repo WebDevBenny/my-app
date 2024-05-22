@@ -1,0 +1,143 @@
+body {
+    background-color: #0D0D0D; /* Dark background for sophistication */
+    font-family: 'Times New Roman', Times, serif; /* Elegant font */
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #4B0082; /* Deep purple */
+    color: #FFD700; /* Gold color */
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 2px solid #FFD700;
+ 
+}
+/* Navigation Bar */
+nav {
+    width: 100vw;
+    background-color: #2F2F2F; /* Dark grey */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+nav a {
+    color: #FFD700; /* Gold color */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background 0.3s, color 0.3s;
+    padding: 10px 20px; /* Adjust padding for better spacing */
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #4B0082; /* Deep purple on hover */
+    color: #FFFFFF;
+}
+
+/* Main Content */
+main {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Pie Chart */
+.pie-chart {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background: radial-gradient(circle, #FFD700, #4B0082); /* Gold to deep purple gradient */
+    border: 5px solid #FFD700; /* Gold border */
+    border-radius: 50%;
+    box-shadow: 0 0 20px #FFD700;
+}
+/* Buttons */
+button {
+    background-color: #FFD700; /* Gold button */
+    color: #4B0082; /* Deep purple text */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #4B0082; /* Deep purple on hover */
+    color: #FFFFFF;
+}
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    
+  }
+  .right{
+    text-align: center;
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left{
+    text-align: center;
+  }
+  .loader {
+    border: 16px solid #f3f3f3; /* Grauer Hintergrund */
+    border-top: 16px solid #3498db; /* Blauer Kreis */
+    border-right: 16px solid #2ecc71; /* Grüner Kreis */
+    border-bottom: 16px solid #f39c12; /* Gelber Kreis */
+    border-left: 16px solid #e74c3c; /* Roter Kreis */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .player-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 200px;
+    text-align: left;
+  }
+  
+  .player-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background: linear-gradient(90deg, #ff8c00, #ffa500, #ff4500);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background 0.2s;
+    margin-left: 2vw;
+  }
+  
+  .player-list li:nth-child(even) {
+    background: linear-gradient(90deg, #00bfff, #1e90ff, #4169e1);
+  }
+  
+  .player-list li:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #ff4500, #ff8c00, #ffa500);
+  }
+
